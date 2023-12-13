@@ -23,7 +23,11 @@ function draw() {
        mouseY > map(tabela.getString(i, 1), 50, 259, 800, 0) - 10 &&
        mouseY < map(tabela.getString(i, 1), 50, 259, 800, 0) + 10) {
       
-      fill(255, 255, 255, 200)
+      fill(255, 255, 255, 200);
+      text(
+      tabela.getString(i, 1),
+      sorteio[i],
+      map(tabela.getString(i, 1), 50, 259, 800, 0) + 20 )
     }
     else {
       fill(100, tabela.getString(i, 1), 190, 150);
